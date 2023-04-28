@@ -43,7 +43,7 @@ class Clientes(TelegramClient):
             print(e)
             pass
 
-    def update_data(self, message):
+    def update_data(self, message): # esto esta en desarrollo 
         self.message = message
 
         level_match = re.search(r"Level:(\d+)", message)
