@@ -12,6 +12,14 @@ class Clientes(TelegramClient):  # clientes
     def __init__(self, *a, **kw):
         super().__init__(*a, **kw)
 
+        
+        self.quest = bool   # modificables segun se necesite 
+         self.arena = bool 
+         self.foray = bool   
+         self.fix_quest = ""  # tipo de quests 
+         self.ram_quest = bool 
+         self.mob_hunt = bool 
+         self.squad_orden = bool
         self.add_event_handler(
             self.on_chat,
                     self.add_event_handler(self.on_cw, events.NewMessage(chats='chtwrsbot', incoming=True))  # Add a Handler 
