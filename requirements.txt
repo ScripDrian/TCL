@@ -1,0 +1,6 @@
+Telethon
+telegram
+asyncio
+cryptg
+pytest
+pyowm
